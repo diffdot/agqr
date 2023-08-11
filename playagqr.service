@@ -1,0 +1,13 @@
+# /etc/systemd/system/playagqr.service
+[Unit]
+Description = Play AGQR radio
+
+[Service]
+ExecStart=/opt/playagqr.sh
+Restart=no
+Type=simple
+User=pi
+Group=audio
+
+[Install]
+WantedBy=multi-user.target
